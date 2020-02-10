@@ -13,8 +13,7 @@ import {
 
 const DiningNavbar = styled(Navbar)`
     border-bottom: 2px solid #202d3b;
-    padding: 0;
-    height:60px;
+    padding: 10px 16px;
 `
 
 class Navigation extends React.Component {
@@ -37,7 +36,7 @@ class Navigation extends React.Component {
             <DiningNavbar className="diningreport-nav" color="primary" dark expand="md">
                 <Container>
                 <NavbarBrand href="/">Dining<strong>Report</strong></NavbarBrand>
-                <NavbarToggler onClick={this.toggle} />
+                <NavbarToggler onClick={() => this.toggle()} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
